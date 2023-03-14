@@ -16,7 +16,7 @@ def post_data():
     input_data = request.form.get('input')
     # Code for processing the input data
 #     english_text = "Hello, how are you?"
-    french_translation = translator.translate(input_data, dest='fr')
+    french_translation = translator.translate(input_data, dest='en')
     result = {"success": True, "data": french_translation.text}
     return jsonify(result)
 
